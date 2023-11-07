@@ -4,13 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="index.js"></script>
-    <title>My Froyo</title>
+    <title>Froyo Flavor Counter</title>
 </head>
 <body>
-    <main>
-        <form>
-            <input type="button" value="Start My Froyo Orders" onclick="flavorCount();" />
-        </form> 
-    </main>
+    <h1>Froyo Flavor Counter</h1>
+    <p>Enter a list of comma-separated froyo flavors:</p>
+    <input type="text" id="flavorsInput">
+    <button onclick="countFlavors()">Submit</button>
+    <table id="flavorTable">
+        <thead>
+            <tr>
+                <th>Flavor</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Flavor counts will be displayed here -->
+        </tbody>
+    </table>
 </body>
 </html>
